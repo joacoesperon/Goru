@@ -10,7 +10,7 @@ export default function Home() {
   const [signer, setSigner] = useState(undefined);
   const [signerAddress, setSignerAddress] = useState(undefined);
   const [amount, setAmount] = useState(0);
-  const [progress, setProgress] = useState(50); // Ejemplo de progreso del 50%
+  const [progress, setProgress] = useState(22); // Ejemplo de progreso del 50%
 
   useEffect(() => {
     if (typeof window.ethereum !== "undefined") {
@@ -230,7 +230,7 @@ export default function Home() {
             )}
           </button>
           <div className={styles.navRedes}>
-            <a href="https://twitter.com" target="_blank">
+            <a href="https://twitter.com/GoruCoin" target="_blank">
               <Image src="/tw.png" alt="twitter" width={25} height={25} />
             </a>
           </div>
@@ -240,13 +240,13 @@ export default function Home() {
         <div id="about" className={styles.containerAbout}>
 
           <div className={styles.containerAboutTop}>
-            <Image src="/icono.png" alt="icono" width={250} height={250} priority />
+            <Image src="/icono2.png" alt="icono" width={250} height={250} priority />
             <h1>goru</h1>
           </div>
           <div className={styles.containerAboutPreSale}>
             <h2>Presale</h2>
-            <p >Price: 1 GORU = $0.0043</p>
-            <p >Progress: {progress} BNB / 1000 BNB</p>
+            <p >PRICE: 1 GORU = $0.0043</p>
+            <p >PROGRESS: {progress} BNB / 100 BNB</p>
             <div className={styles.headerpresaleinput}>
               <input type="text" id="quantityInput" placeholder="Enter BNB Amount"
                 onChange={e => setAmount(e.target.value)} />
@@ -259,7 +259,7 @@ export default function Home() {
                 </button>
               )}
             </div>
-            <p >You will Receive: {(amount * 133333) + " GORU"}</p>
+            <p >YOU WILL RECIVE: {(amount * 133333) + " GORU"}</p>
           </div>
         </div>
         <div className={styles.division}>
@@ -269,8 +269,8 @@ export default function Home() {
         {/* Container About */}
         <div id="wtf" className={styles.containerWtf}>
           <div className={styles.containerWtf1}>
-            <h3>zoo goru</h3>
-            <Image src="/goru.png" alt="goru" width={450} height={450} priority />
+            <h3>pump goru</h3>
+            <Image src="/foto1.png" alt="goru" width={400} height={400} priority />
           </div>
           <div className={styles.containerWtf2}>
             <h3>goru is wild</h3>
@@ -280,7 +280,7 @@ export default function Home() {
           </div>
           <div className={styles.containerWtf3}>
             <h3> goru</h3>
-            <Image src="/goru.png" alt="goru" width={450} height={450} priority />
+            <Image src="/foto2.png" alt="goru" width={350} height={350} priority />
           </div>
         </div>
 
@@ -361,6 +361,7 @@ export default function Home() {
               </strong>
             </div>
           </div>
+          <Image src="/fotofondo.png" alt="goru" width={400} height={400} priority />
         </div>
       </div>
     </div >
