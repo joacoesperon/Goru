@@ -63,7 +63,7 @@
 
 /*CONTAINER ABOUT*/
 .containerAbout {
-  height: 100vh;
+  height: 125vh;
   color: #000;
 }
 
@@ -91,7 +91,8 @@
   flex-direction: column;
   align-items: center;
   color: #000;
-  line-height: 1.5;
+  line-height: 2;
+  margin-top: 5vh;
 }
 
 .containerAboutPreSale h2 {
@@ -103,9 +104,10 @@
 .containerAboutPreSale p {
   font-size: 2rem;
   margin: 0;
-  font-family: inter;
   color: white;
-  color: #000;
+  color: black;
+  text-shadow: 1px 1px #000;
+  font-weight: 500;
 }
 
 /*
@@ -124,7 +126,6 @@ IMPUT TEXT
 
 .headerpresaleinput span {
   text-align: center;
-  height: 5vh;
   width: 10vw;
   margin-left: 5vh;
   border-radius: 10px;
@@ -162,7 +163,6 @@ EXECUTE BUTTON
 .executeButton {
   height: 5vh;
   width: 10vw;
-  margin-left: 5vh;
   background-color: white;
   border: 5px solid #000;
   border-radius: 10px;
@@ -173,7 +173,7 @@ EXECUTE BUTTON
   color: #333;
   cursor: pointer;
   font-family: 'MiFuentePersonalizada', sans-serif;
-  margin-top: 5vh;
+  margin-bottom: 2vh;
 }
 
 .executeButton:hover {
@@ -203,24 +203,32 @@ WTF CONTAINER
 }
 
 .containerWtf1 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   font-size: 2rem;
 }
 
 .containerWtf1 img {
+  padding-top: 2vh;
   width: auto;
   height: auto;
+  height: 500px;
 }
 
 .containerWtf2 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   width: 30vw;
   background-color: white;
   border: solid #000;
   border-radius: 50px;
   border-width: 3px 3px 6px;
+  padding: 4vh;
 }
 
 .containerWtf2 h3 {
   font-size: 2rem;
+  padding-bottom: 2vh;
 }
 
 .containerWtf2 p {
@@ -229,12 +237,16 @@ WTF CONTAINER
 }
 
 .containerWtf3 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   font-size: 2rem;
 }
 
 .containerWtf3 img {
+  padding-top: 2vh;
   width: auto;
   height: auto;
+  height: 500px;
 }
 
 .containerHowToBuy {
@@ -243,10 +255,14 @@ WTF CONTAINER
   text-align: center;
   background-color: rgb(177, 125, 85);
   margin: 0;
+  padding-bottom: 5vh;
 }
 
 .containerHowToBuy h2 {
+  padding-top: 5vh;
   font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px #000;
 }
 
 .containerHowToBuyBloques {
@@ -271,6 +287,8 @@ WTF CONTAINER
   margin: 40px;
   text-align: left;
   line-height: 1.5;
+  padding: 2vh;
+  padding-bottom: 10vh;
 }
 
 .containerHowToBuyBloques1 h4 {
@@ -293,6 +311,8 @@ WTF CONTAINER
   margin: 40px;
   text-align: left;
   line-height: 1.5;
+  padding: 2vh;
+  padding-bottom: 10vh;
 }
 
 .containerHowToBuyBloques2 h4 {
@@ -315,6 +335,8 @@ WTF CONTAINER
   margin: 40px;
   text-align: left;
   line-height: 1.5;
+  padding: 2vh;
+  padding-bottom: 10vh;
 }
 
 .containerHowToBuyBloques3 h4 {
@@ -337,6 +359,8 @@ WTF CONTAINER
   margin: 40px;
   text-align: left;
   line-height: 1.5;
+  padding: 2vh;
+  padding-bottom: 10vh;
 }
 
 .containerHowToBuyBloques4 h4 {
@@ -359,15 +383,21 @@ WTF CONTAINER
 }
 
 .containerTokenomics h2 {
+  padding-top: 5vh;
   font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px #000;
 }
 
 .containerTokenomics img {
+  padding-top: 10vh;
   width: auto;
   height: auto;
+  height: 500px;
 }
 
 .containerTokenomicsCarteles {
+  margin-top: 5vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 400px));
   gap: 40px;
@@ -403,4 +433,126 @@ WTF CONTAINER
   border-radius: 32px;
   border: 5px solid rgb(177, 125, 85);
   font-size: 1.5rem;
+}
+
+@media screen and (max-width:1400px) {
+  .containerHowToBuyBloques {
+    flex-direction: column;
+  }
+
+  .containerWtf2 p {
+    padding: inherit;
+  }
+
+  .containerHowToBuyBloques1 {
+    width: inherit;
+  }
+
+  .containerHowToBuyBloques2 {
+    width: inherit;
+  }
+
+  .containerHowToBuyBloques3 {
+    width: inherit;
+  }
+
+  .containerHowToBuyBloques4 {
+    width: inherit;
+  }
+
+  .executeButton {
+    width: inherit;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .nav ul {
+    display: none;
+  }
+
+  .nav button {
+    width: 20vw;
+  }
+
+  .containerHowToBuyBloques {
+    flex-direction: column;
+  }
+
+  .containerWtf2 p {
+    padding: inherit;
+  }
+
+  .containerHowToBuyBloques1 {
+    width: inherit;
+  }
+
+  .containerHowToBuyBloques2 {
+    width: inherit;
+  }
+
+  .containerHowToBuyBloques3 {
+    width: inherit;
+  }
+
+  .containerHowToBuyBloques4 {
+    width: inherit;
+  }
+
+  .executeButton {
+    width: inherit;
+  }
+
+}
+
+@media screen and (max-width:1170px) {
+  .containerWtf {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width:820px) {
+  .containerTokenomicsCarteles {
+    grid-template-columns: inherit;
+  }
+
+  .containerWtf {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width:430px) {
+  .containerWtf2 {
+    width: inherit;
+  }
+
+  .containerHowToBuy h2 {
+    font-size: 3rem;
+  }
+
+  .containerTokenomics h2 {
+    font-size: 3rem;
+  }
+
+  .containerAboutPreSale p {
+    padding: 1vh;
+  }
+
+  .containerAbout {
+    height: 150vh;
+  }
+
+  .executeButton {
+    width: inherit;
+  }
+
+  .containerAboutPreSale h2 {
+    font-size: 3rem;
+  }
+
+  .containerAboutPreSale p {
+    font-size: 1.5rem;
+  }
+
 }
